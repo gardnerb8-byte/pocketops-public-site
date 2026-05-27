@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy | PocketOps</title>
+    <meta name="description" content="PocketOps Privacy Policy draft page." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">PocketOps</a>
+        <div class="links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="account-deletion.html">Account Deletion</a>
+          <a href="support.html">Support</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <div class="draft-warning">Draft pending final legal review.</div>
+      <h1>Privacy Policy</h1>
+      <p class="lead">
+        PocketOps is an AI admin assistant for solo service businesses. This
+        page describes the types of information the app may collect and how that
+        information is used to provide app features.
+      </p>
+
+      <section>
+        <h2>Information PocketOps may collect</h2>
+        <ul>
+          <li>Account information such as email address, user ID, authentication metadata, and sign-in status.</li>
+          <li>Business profile data such as business name, owner name, service type, phone number, and default hourly rate.</li>
+          <li>Client and contact details entered by the user, including names, email addresses, phone numbers, addresses, and notes.</li>
+          <li>Jobs, invoices, reminders, payment status, reminder dates, and related notes entered by the user.</li>
+          <li>AI prompt inputs and generated quote/customer messages, including client name, job details, estimated price, business name, and tone.</li>
+          <li>AI usage events such as generation timestamps, source, model, and estimated input/output character counts.</li>
+          <li>Subscription and purchase status metadata processed through RevenueCat, such as entitlement status, product IDs, store environment, and purchase identifiers.</li>
+          <li>Local notification permission state and device-local notification IDs for reminder notifications on the current device.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Service providers</h2>
+        <p>PocketOps may use the following providers to operate the app:</p>
+        <ul>
+          <li>Supabase for authentication, database storage, and Edge Functions.</li>
+          <li>OpenAI for AI-generated quote/customer message drafts through server-side Supabase Edge Functions.</li>
+          <li>RevenueCat for subscription status, purchase handling, entitlement data, and subscription webhook processing.</li>
+          <li>Expo and EAS for mobile app development and build tooling.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How information is used</h2>
+        <p>
+          PocketOps uses information to provide app features, save user-entered
+          business records, generate AI quote drafts, show AI usage summaries,
+          manage subscription status, schedule local reminders, troubleshoot app
+          behavior, and support account deletion requests.
+        </p>
+      </section>
+
+      <section>
+        <h2>Account deletion</h2>
+        <p>
+          Users can request account deletion in the app by going to Settings,
+          then Delete Account. In Supabase-backed mode, PocketOps calls a secure
+          server-side delete-account function to remove user-owned app records
+          and delete the Supabase auth user. In demo mode, no real account is
+          created; deletion clears local demo data on the device.
+        </p>
+        <p>
+          Deleted user-owned records may include business profile data, clients,
+          jobs, invoices, reminders, AI messages, AI usage records, AI limit
+          records, subscription entitlement rows, and subscription refresh rows
+          where appropriate. Operational records such as RevenueCat webhook logs
+          may be preserved for security, debugging, fraud prevention, or
+          subscription reconciliation purposes where allowed.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data security</h2>
+        <p>
+          PocketOps is designed so server-only secrets, such as OpenAI API keys,
+          Supabase service role keys, RevenueCat secret API keys, and webhook
+          tokens, are stored in server-side configuration and not in the mobile
+          app.
+        </p>
+      </section>
+
+      <section>
+        <h2>Your responsibilities</h2>
+        <p>
+          Users are responsible for the client/contact data and business records
+          they enter into PocketOps, including making sure their use complies
+          with applicable laws and obligations to customers.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Support/contact placeholder: <a href="mailto:support@example.com">support@example.com</a></p>
+        <p class="meta">Replace this placeholder before publication.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">PocketOps Privacy Policy draft. Final review required before use.</footer>
+  </body>
+</html>
