@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Account Deletion | PocketOps</title>
+    <meta name="description" content="How to delete a PocketOps account." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">PocketOps</a>
+        <div class="links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="account-deletion.html">Account Deletion</a>
+          <a href="support.html">Support</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <div class="draft-warning">Draft pending final legal review.</div>
+      <h1>Account Deletion</h1>
+      <p class="lead">
+        PocketOps includes an in-app account deletion flow. Users can delete a
+        demo account locally or request deletion for a Supabase-backed account
+        through the secure server-side account deletion function.
+      </p>
+
+      <section>
+        <h2>How to delete your account in the app</h2>
+        <ol>
+          <li>Open PocketOps.</li>
+          <li>Go to Settings.</li>
+          <li>Tap Delete Account.</li>
+          <li>Read the deletion explanation.</li>
+          <li>Type <strong>DELETE</strong> to confirm.</li>
+          <li>Tap Delete account.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Demo mode deletion</h2>
+        <p>
+          In demo mode, no real PocketOps account is created. Deleting a demo
+          account clears local demo data on the current device where practical
+          and signs the user out.
+        </p>
+      </section>
+
+      <section>
+        <h2>Supabase-backed deletion</h2>
+        <p>
+          In Supabase-backed mode, PocketOps calls a secure server-side
+          delete-account Edge Function. The mobile app does not store or use the
+          Supabase service role key. The function is designed to delete
+          user-owned PocketOps records and the Supabase auth user.
+        </p>
+        <p>User-owned data may include:</p>
+        <ul>
+          <li>Business profile data.</li>
+          <li>Clients and contact records entered by the user.</li>
+          <li>Jobs, invoices, and reminders.</li>
+          <li>AI message history.</li>
+          <li>AI usage events and AI limit records.</li>
+          <li>Subscription entitlement rows owned by the user.</li>
+          <li>Subscription refresh events owned by the user.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Operational records</h2>
+        <p>
+          PocketOps may preserve limited operational records where appropriate,
+          such as RevenueCat webhook logs, backend sync logs, security records,
+          fraud-prevention records, or records needed for subscription
+          reconciliation. These records are not exposed to normal app users.
+        </p>
+      </section>
+
+      <section>
+        <h2>Support request fallback</h2>
+        <p>
+          If in-app deletion is unavailable, users can request help through
+          support.
+        </p>
+        <p>Support/contact placeholder: <a href="mailto:support@example.com">support@example.com</a></p>
+        <p class="meta">Replace this placeholder before publication.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">PocketOps Account Deletion Policy draft. Final review required before use.</footer>
+  </body>
+</html>
